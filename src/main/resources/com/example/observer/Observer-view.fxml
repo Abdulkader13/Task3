@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" spacing="20" alignment="CENTER" fx:controller="com.example.observer.Controller" style="-fx-background-color: #f1f1f1; -fx-padding: 30px;">
+    <!-- Time Label -->
+    <Label fx:id="timeLabel" text="Current Timer: 0" style="-fx-font-size: 18px; -fx-font-family: 'Arial'; -fx-text-fill: #444444; font-weight: bold;"/>
+
+    <!-- Start and Stop Buttons with rounded corners and hover effects -->
+    <Button fx:id="startButton" text="Start" style="-fx-background-color: #4CAF50; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 12px 25px; -fx-border-radius: 10px; -fx-cursor: hand;"/>
+    <Button fx:id="stopButton" text="Stop" style="-fx-background-color: #f44336; -fx-text-fill: white; -fx-font-size: 16px; -fx-padding: 12px 25px; -fx-border-radius: 10px; -fx-cursor: hand;"/>
+
+    <!-- Status Labels with adjusted size and color -->
+    <Label fx:id="statusLabel" text="Status: Inactive" style="-fx-font-size: 16px; -fx-font-family: 'Arial'; -fx-text-fill: #444444; font-weight: semi-bold;"/>
+    <Label fx:id="animationStatusLabel" text="" style="-fx-font-size: 14px; -fx-font-family: 'Arial'; -fx-text-fill: #888888;"/>
+
+    <!-- Rectangle with adjusted size and color -->
+    <Rectangle fx:id="componentThreeShape" width="120" height="120" fill="skyblue" stroke="black" strokeWidth="3" />
+</VBox>
